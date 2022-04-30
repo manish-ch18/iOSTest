@@ -57,9 +57,10 @@ extension UserDataCell: UICollectionViewDelegate, UICollectionViewDataSource {
 extension UserDataCell: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let width = collectionUserImages.bounds.self.width
         if arrUserData.count % 2 == 0 || indexPath.row > 0 {
             return CGSize(width: AppConstants.screenWidth/2 - 30, height: AppConstants.screenWidth/2 - 30)
         }
-        return CGSize(width: collectionView.bounds.width, height: collectionView.bounds.width)
+        return CGSize(width: width, height: width)
     }
 }

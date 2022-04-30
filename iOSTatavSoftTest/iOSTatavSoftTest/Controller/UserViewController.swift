@@ -8,6 +8,7 @@
 import UIKit
 
 class UserViewController: UIViewController {
+    // MARK: Outlets
     @IBOutlet weak var tblUserData: UITableView!
     
     var userDataVM: UserDataViewModel?
@@ -27,6 +28,7 @@ class UserViewController: UIViewController {
 
 }
 
+// MARK: Setting Up tableView Delegate & DataSource
 extension UserViewController : UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -57,6 +59,7 @@ extension UserViewController : UITableViewDelegate, UITableViewDataSource {
 
 }
 
+// MARK: View Model Dependency Injection
 extension UserViewController: UserDataViewModelDelegate{
     func updateUserData() {
         DispatchQueue.main.async {

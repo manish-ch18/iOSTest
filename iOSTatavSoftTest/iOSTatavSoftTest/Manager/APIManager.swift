@@ -7,6 +7,8 @@
 
 import Foundation
 
+
+//MARK: APIManage Singleton class
 class APIManager: NSObject{
     
     //MARK: Singleton Class Object
@@ -14,6 +16,7 @@ class APIManager: NSObject{
     
     let baseUrl = "http://sd2-hiring.herokuapp.com/api/"
     
+    //MARK: Get users data
     func getUserdata(userURL: String, completion: @escaping ((_ userData: UserData?, _ error: Error?) -> ())){
         
         guard let url = URL(string: baseUrl + userURL) else{

@@ -8,6 +8,8 @@
 import Foundation
 import UIKit
 
+
+//MARK: Image Cache logic
 class ImageCache {
     private let cache = NSCache<NSString, UIImage>()
     private var observer: NSObjectProtocol?

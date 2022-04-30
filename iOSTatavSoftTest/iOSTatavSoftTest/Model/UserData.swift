@@ -7,7 +7,7 @@
 
 import Foundation
 
-
+//MARK: Base Model
 struct Base : Codable {
     let status : Bool?
     let message : String?
@@ -30,7 +30,7 @@ struct Base : Codable {
 }
 
 
-
+//MARK: User data Model
 struct UserData : Codable {
     let users : [Users]?
     let has_more : Bool?

@@ -7,7 +7,7 @@
 
 import Foundation
 
-
+//MARK: User Model
 struct Users : Codable {
     let name : String?
     let image : String?

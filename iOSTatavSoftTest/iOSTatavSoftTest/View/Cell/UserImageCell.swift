@@ -8,6 +8,8 @@
 import UIKit
 
 class UserImageCell: UICollectionViewCell {
+    
+    // MARK: Outlets
     @IBOutlet weak var imgUser: UIImageView!
     var strImageURL: String? {
         didSet {

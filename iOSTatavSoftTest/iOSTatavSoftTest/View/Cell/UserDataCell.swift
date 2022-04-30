@@ -8,6 +8,7 @@
 import UIKit
 
 class UserDataCell: UITableViewCell {
+    // MARK: Outlets
     @IBOutlet weak var imgUser: UIImageView!
     @IBOutlet weak var lblUserName: UILabel!
     @IBOutlet weak var collectionUserImages: UICollectionView!

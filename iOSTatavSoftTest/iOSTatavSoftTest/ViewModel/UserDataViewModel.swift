@@ -7,10 +7,12 @@
 
 import Foundation
 
+// MARK: View Modele Delegate
 protocol UserDataViewModelDelegate: AnyObject{
     func updateUserData()
 }
 
+// MARK: View Modele
 class UserDataViewModel{
     
     
@@ -24,7 +26,6 @@ class UserDataViewModel{
     
     
     func getUsers() {
-        
         APIManager.shared.getUserdata(userURL: "users?offset=\(arrUserData.count)&limit=10") { userData, error in
             self.arrUserData.append(contentsOf: userData?.users ?? [])
             self.hasMoreData = userData?.has_more ?? false

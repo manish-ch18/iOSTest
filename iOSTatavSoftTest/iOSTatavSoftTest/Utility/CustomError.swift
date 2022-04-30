@@ -7,6 +7,7 @@
 
 import Foundation
 
+//MARK: Custom Error
 public struct CustomError: Error {
     let message: String
 

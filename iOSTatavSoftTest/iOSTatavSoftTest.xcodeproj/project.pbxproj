@@ -14,10 +14,14 @@
 		AD7BF300281D3E070086EC4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD7BF2FF281D3E070086EC4C /* Assets.xcassets */; };
 		AD7BF303281D3E070086EC4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD7BF301281D3E070086EC4C /* LaunchScreen.storyboard */; };
 		AD7BF30C281D3E870086EC4C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7BF30B281D3E870086EC4C /* Extensions.swift */; };
-		AD7BF30E281D3EE30086EC4C /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7BF30D281D3EE30086EC4C /* Manager.swift */; };
+		AD7BF30E281D3EE30086EC4C /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7BF30D281D3EE30086EC4C /* APIManager.swift */; };
 		AD7BF312281D40620086EC4C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7BF311281D40620086EC4C /* User.swift */; };
 		AD7BF314281D406B0086EC4C /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7BF313281D406B0086EC4C /* UserData.swift */; };
 		AD7BF318281D42390086EC4C /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7BF317281D42390086EC4C /* AppConstant.swift */; };
+		AD7BF31D281D43BC0086EC4C /* UserDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7BF31C281D43BC0086EC4C /* UserDataCell.swift */; };
+		AD7BF31F281D43DA0086EC4C /* UserImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7BF31E281D43DA0086EC4C /* UserImageCell.swift */; };
+		AD7BF321281D45930086EC4C /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7BF320281D45930086EC4C /* ImageCache.swift */; };
+		AD7BF323281D4AD80086EC4C /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7BF322281D4AD80086EC4C /* CustomError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,10 +34,14 @@
 		AD7BF302281D3E070086EC4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD7BF304281D3E070086EC4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD7BF30B281D3E870086EC4C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		AD7BF30D281D3EE30086EC4C /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
+		AD7BF30D281D3EE30086EC4C /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		AD7BF311281D40620086EC4C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		AD7BF313281D406B0086EC4C /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		AD7BF317281D42390086EC4C /* AppConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
+		AD7BF31C281D43BC0086EC4C /* UserDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataCell.swift; sourceTree = "<group>"; };
+		AD7BF31E281D43DA0086EC4C /* UserImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserImageCell.swift; sourceTree = "<group>"; };
+		AD7BF320281D45930086EC4C /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		AD7BF322281D4AD80086EC4C /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +74,7 @@
 		AD7BF2F5281D3E060086EC4C /* iOSTatavSoftTest */ = {
 			isa = PBXGroup;
 			children = (
+				AD7BF31B281D439E0086EC4C /* View */,
 				AD7BF316281D42210086EC4C /* Utility */,
 				AD7BF30F281D3EEB0086EC4C /* Manager */,
 				AD7BF310281D40570086EC4C /* Model */,
@@ -91,7 +100,7 @@
 		AD7BF30F281D3EEB0086EC4C /* Manager */ = {
 			isa = PBXGroup;
 			children = (
-				AD7BF30D281D3EE30086EC4C /* Manager.swift */,
+				AD7BF30D281D3EE30086EC4C /* APIManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -118,8 +127,27 @@
 			children = (
 				AD7BF30A281D3E700086EC4C /* Extensions */,
 				AD7BF317281D42390086EC4C /* AppConstant.swift */,
+				AD7BF320281D45930086EC4C /* ImageCache.swift */,
+				AD7BF322281D4AD80086EC4C /* CustomError.swift */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		AD7BF31A281D438F0086EC4C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				AD7BF31C281D43BC0086EC4C /* UserDataCell.swift */,
+				AD7BF31E281D43DA0086EC4C /* UserImageCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		AD7BF31B281D439E0086EC4C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AD7BF31A281D438F0086EC4C /* Cell */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,14 +221,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD7BF321281D45930086EC4C /* ImageCache.swift in Sources */,
 				AD7BF2FB281D3E060086EC4C /* UserViewController.swift in Sources */,
 				AD7BF2F7281D3E060086EC4C /* AppDelegate.swift in Sources */,
+				AD7BF31F281D43DA0086EC4C /* UserImageCell.swift in Sources */,
 				AD7BF314281D406B0086EC4C /* UserData.swift in Sources */,
+				AD7BF323281D4AD80086EC4C /* CustomError.swift in Sources */,
 				AD7BF312281D40620086EC4C /* User.swift in Sources */,
 				AD7BF2F9281D3E060086EC4C /* SceneDelegate.swift in Sources */,
 				AD7BF30C281D3E870086EC4C /* Extensions.swift in Sources */,
-				AD7BF30E281D3EE30086EC4C /* Manager.swift in Sources */,
+				AD7BF30E281D3EE30086EC4C /* APIManager.swift in Sources */,
 				AD7BF318281D42390086EC4C /* AppConstant.swift in Sources */,
+				AD7BF31D281D43BC0086EC4C /* UserDataCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

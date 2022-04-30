@@ -19,4 +19,6 @@ struct AppConstants{
     static var screenHeight: CGFloat {
         return UIScreen.main.bounds.height
     }
+    
+    static let placeholdeImage = UIImage(systemName: "person.circle")
 }

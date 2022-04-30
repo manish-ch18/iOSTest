@@ -10,15 +10,21 @@ import UIKit
 class UserViewController: UIViewController {
     @IBOutlet weak var tblUserData: UITableView!
     
+    var userDataVM: UserDataViewModel?
+    var rowHeight = 60
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
+    func setupView(){
+        self.userDataVM = UserDataViewModel(delegate: self)
+        self.userDataVM?.getUsers()
+    }
 
 
 }
-
-
 
 extension UserViewController : UITableViewDelegate, UITableViewDataSource {
     
@@ -31,5 +37,13 @@ extension UserViewController : UITableViewDelegate, UITableViewDataSource {
         return cell
     }
 
+}
+
+extension UserViewController: UserDataViewModelDelegate{
+    func updateUserData() {
+        DispatchQueue.main.async {
+            self.tblUserData.reloadData()
+        }
+    }
 }
 

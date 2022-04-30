@@ -2,7 +2,7 @@
 //  UserDataCell.swift
 //  iOSTatavSoftTest
 //
-//  Created by Nilu Technologies - 9 on 30/04/22.
+//  Created by Manish on 30/04/22.
 //
 
 import UIKit
@@ -38,7 +38,7 @@ class UserDataCell: UITableViewCell {
 
 }
 
-
+// MARK: Setting Up Collection Delegate & DataSource
 extension UserDataCell: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -53,7 +53,7 @@ extension UserDataCell: UICollectionViewDelegate, UICollectionViewDataSource {
     
 }
 
-// MARK: Collectionview - UICollectionViewDelegateFlowLayout method
+// MARK:  Setting Up Collection Layout
 extension UserDataCell: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

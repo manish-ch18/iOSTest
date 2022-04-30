@@ -14,7 +14,7 @@ class APIManager: NSObject{
     
     let baseUrl = "http://sd2-hiring.herokuapp.com/api/"
     
-    func getUserdata(userURL: String, completion: @escaping ((_ userResult: UserData?, _ err: Error?) -> ())){
+    func getUserdata(userURL: String, completion: @escaping ((_ userData: UserData?, _ error: Error?) -> ())){
         
         guard let url = URL(string: baseUrl + userURL) else{
             let error = CustomError(message: "Invalid Url")

@@ -22,6 +22,7 @@
 		AD7BF31F281D43DA0086EC4C /* UserImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7BF31E281D43DA0086EC4C /* UserImageCell.swift */; };
 		AD7BF321281D45930086EC4C /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7BF320281D45930086EC4C /* ImageCache.swift */; };
 		AD7BF323281D4AD80086EC4C /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7BF322281D4AD80086EC4C /* CustomError.swift */; };
+		AD7BF326281D4E1E0086EC4C /* UserDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7BF325281D4E1E0086EC4C /* UserDataViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		AD7BF31E281D43DA0086EC4C /* UserImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserImageCell.swift; sourceTree = "<group>"; };
 		AD7BF320281D45930086EC4C /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		AD7BF322281D4AD80086EC4C /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
+		AD7BF325281D4E1E0086EC4C /* UserDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,10 +76,11 @@
 		AD7BF2F5281D3E060086EC4C /* iOSTatavSoftTest */ = {
 			isa = PBXGroup;
 			children = (
-				AD7BF31B281D439E0086EC4C /* View */,
 				AD7BF316281D42210086EC4C /* Utility */,
 				AD7BF30F281D3EEB0086EC4C /* Manager */,
 				AD7BF310281D40570086EC4C /* Model */,
+				AD7BF31B281D439E0086EC4C /* View */,
+				AD7BF324281D4E040086EC4C /* ViewModel */,
 				AD7BF315281D41F30086EC4C /* Controller */,
 				AD7BF2F6281D3E060086EC4C /* AppDelegate.swift */,
 				AD7BF2F8281D3E060086EC4C /* SceneDelegate.swift */,
@@ -148,6 +151,14 @@
 				AD7BF31A281D438F0086EC4C /* Cell */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		AD7BF324281D4E040086EC4C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AD7BF325281D4E1E0086EC4C /* UserDataViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +240,7 @@
 				AD7BF323281D4AD80086EC4C /* CustomError.swift in Sources */,
 				AD7BF312281D40620086EC4C /* User.swift in Sources */,
 				AD7BF2F9281D3E060086EC4C /* SceneDelegate.swift in Sources */,
+				AD7BF326281D4E1E0086EC4C /* UserDataViewModel.swift in Sources */,
 				AD7BF30C281D3E870086EC4C /* Extensions.swift in Sources */,
 				AD7BF30E281D3EE30086EC4C /* APIManager.swift in Sources */,
 				AD7BF318281D42390086EC4C /* AppConstant.swift in Sources */,

@@ -2,7 +2,7 @@
 //  AppConstant.swift
 //  iOSTatavSoftTest
 //
-//  Created by Nilu Technologies - 9 on 30/04/22.
+//  Created by Manish on 30/04/22.
 //
 
 import UIKit
@@ -21,4 +21,5 @@ struct AppConstants{
     }
     
     static let placeholdeImage = UIImage(systemName: "person.circle")
+    static let placeholdeImageForUser = UIImage(systemName: "person.fill")
 }

@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  iOSTatavSoftTest
 //
-//  Created by Nilu Technologies - 9 on 30/04/22.
+//  Created by Manish on 30/04/22.
 //
 
 import UIKit
